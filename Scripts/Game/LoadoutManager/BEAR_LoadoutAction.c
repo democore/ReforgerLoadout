@@ -69,7 +69,7 @@ class BEAR_LoadoutAction : ScriptedUserAction
 			if (!parentSlot)
 				continue;
 			
-			// Caution, this will ONLY work when called on the server because it deletes a prefab.
+			// Caution, this will ONLY work when called on the server because deleting a prefabis only allowed on the server.
 			SCR_EntityHelper.DeleteEntityAndChildren(weapon);
 		}
 	}
@@ -77,11 +77,15 @@ class BEAR_LoadoutAction : ScriptedUserAction
 	// Spawn an item on the server and tell the client to equip it.
 	protected void SpawnAndEquip(Resource itemResource, IEntity player)
 	{
-		// Caution, this will ONLY work when called on the server because it creates a prefab.
-		IEntity item = GetGame().SpawnEntityPrefab(itemResource);
+		// It is important to move the items to the players location, so that they will not be ignored because of distance
+		// Note, that we can't move the items with item.SetWorldTransform after creating them, because this requires a NwkMovementComponent on their entitys, which they usually don't have.
+		EntitySpawnParams spawnParams = new EntitySpawnParams();
 		vector mat[4];
 		player.GetWorldTransform(mat);
-		item.SetWorldTransform(mat);
+		spawnParams.Transform = mat;
+		
+		// Caution, this will ONLY work when called on the server because creating a prefab is only allowed on the server.
+		IEntity item = GetGame().SpawnEntityPrefab(itemResource, null, spawnParams);
 				
 		BEAR_LoadoutPlayerNetworkFixComponent loadoutNetwork = BEAR_LoadoutPlayerNetworkFixComponent.Cast(player.FindComponent(BEAR_LoadoutPlayerNetworkFixComponent));
 		loadoutNetwork.EquipFromServer(item);

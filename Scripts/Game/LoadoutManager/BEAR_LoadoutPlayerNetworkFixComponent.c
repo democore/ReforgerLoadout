@@ -34,7 +34,6 @@ class BEAR_LoadoutPlayerNetworkFixComponent : ScriptComponent
 		// We don't already equip the stuff here. Instead we cache the items that need to be equipped.
 		// This is because the items do not exist on the client yet. Check the EOnFrame method for equipping.
 		_waitForArray.Insert(itemId);
-		Print("Client now waiting for ItemId " + itemId);
 	}
 	
 	// We need the OnPostInit and EOnInit for the EOnFrame to be called.
