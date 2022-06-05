@@ -10,7 +10,9 @@ https://github.com/democore/ReforgerLoadout/tree/master/Scripts/Game/LoadoutMana
 
 The current workflow is
 
-- Server spawns items at the player location
-- Tells the player they were spawned with Rpc
-- The client then waits until the items are replicated
-- Once the items are replicated, they are equip on client side
+- User presses F on a entity that has the [BEAR_LoadoutAction](https://github.com/democore/ReforgerLoadout/blob/master/Scripts/Game/LoadoutManager/BEAR_LoadoutAction.c)
+- Server receives the PerformAction and starts logic in [BEAR_LoadoutAction.c](https://github.com/democore/ReforgerLoadout/blob/ee109bff8924cf09a70a23f2cc86234ce47100e4/Scripts/Game/LoadoutManager/BEAR_LoadoutAction.c#L21))
+- Server spawns items at the player location [BEAR_LoadoutAction.c](https://github.com/democore/ReforgerLoadout/blob/ee109bff8924cf09a70a23f2cc86234ce47100e4/Scripts/Game/LoadoutManager/BEAR_LoadoutAction.c#L88)
+- Tells the player they were spawned with Rpc [BEAR_LoadoutAction.c](https://github.com/democore/ReforgerLoadout/blob/ee109bff8924cf09a70a23f2cc86234ce47100e4/Scripts/Game/LoadoutManager/BEAR_LoadoutAction.c#L91)
+- The client then waits until the items are replicated [BEAR_LoadoutPlayerNetworkFixComponent.c](https://github.com/democore/ReforgerLoadout/blob/ee109bff8924cf09a70a23f2cc86234ce47100e4/Scripts/Game/LoadoutManager/BEAR_LoadoutPlayerNetworkFixComponent.c#L56)
+- Once the items are replicated, they are equip on client side [BEAR_LoadoutPlayerNetworkFixComponent.c](https://github.com/democore/ReforgerLoadout/blob/ee109bff8924cf09a70a23f2cc86234ce47100e4/Scripts/Game/LoadoutManager/BEAR_LoadoutPlayerNetworkFixComponent.c#L70)
