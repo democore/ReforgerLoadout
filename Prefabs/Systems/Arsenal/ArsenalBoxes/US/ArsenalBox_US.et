@@ -1,0 +1,16 @@
+GenericEntity : "{54986385A6AF77B2}Prefabs/Systems/Arsenal/ArsenalBoxes/ArsenalBox_Base.et" {
+ ID "56F2C6D6F7C6DAFA"
+ components {
+  ActionsManagerComponent "{56F2C6D1431ADB12}" {
+   additionalActions {
+    BEAR_LoadoutAction "{598AAD7A01434B56}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{598AAD7A02B1790B}" {
+     }
+    }
+   }
+  }
+ }
+}

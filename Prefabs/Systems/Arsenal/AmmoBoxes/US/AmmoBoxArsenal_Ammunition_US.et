@@ -1,0 +1,16 @@
+GenericEntity : "{E712306EC1913041}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArsenal_Ammunition_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  ActionsManagerComponent "{5476B36C403D4CC0}" {
+   additionalActions {
+    BEAR_LoadoutAction "{598AAD7A64EBBF6E}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{598AAD7A665248F2}" {
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,53 @@
+GenericEntity {
+ ID "5584D662CB80A8C7"
+ {
+  GenericEntity {
+   ID "594C5DC8F162261F"
+   components {
+    ActionsManagerComponent "{5476B36C403D4CC0}" {
+     additionalActions {
+      BEAR_LoadoutAction "{598AAD7A76027497}" {
+       ParentContextList {
+        "default"
+       }
+       UIInfo UIInfo "{598AAD7A7002E8DA}" {
+       }
+      }
+     }
+    }
+   }
+  }
+  GenericEntity {
+   ID "594C5DCB7806F265"
+   components {
+    ActionsManagerComponent "{58A47AFA05E91C81}" {
+     additionalActions {
+      BEAR_LoadoutAction "{598AAD7A40688A5D}" {
+       ParentContextList {
+        "default"
+       }
+       UIInfo UIInfo "{598AAD7A42DBC03D}" {
+       }
+      }
+     }
+    }
+   }
+  }
+  GenericEntity {
+   ID "594C5DD4DB267C0F"
+   components {
+    ActionsManagerComponent "{58A47AFA05E91C81}" {
+     additionalActions {
+      BEAR_LoadoutAction "{598AAD7A4F9B67CB}" {
+       ParentContextList {
+        "default"
+       }
+       UIInfo UIInfo "{598AAD7A4992FFA4}" {
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

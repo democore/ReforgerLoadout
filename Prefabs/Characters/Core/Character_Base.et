@@ -1,0 +1,7 @@
+SCR_ChimeraCharacter {
+ ID "520EC961A090B1EE"
+ components {
+  BEAR_LoadoutPlayerNetworkFixComponent "{5989412197822A62}" {
+  }
+ }
+}

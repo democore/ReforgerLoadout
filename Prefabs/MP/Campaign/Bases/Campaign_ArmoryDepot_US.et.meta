@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{6C05433C85E0FD0C}Prefabs/MP/Campaign/Bases/Campaign_ArmoryDepot_US.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

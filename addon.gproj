@@ -1,0 +1,20 @@
+GameProject {
+ ID "OutfitSelector"
+ GUID "598729AC4466E307"
+ TITLE "OutfitSelector"
+ Dependencies {
+  "596D3D94153010B8" "596EDD4B95459FD8" "58D0FB3206B6F859" "5965770215E93269"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}
