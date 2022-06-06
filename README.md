@@ -16,3 +16,7 @@ The current workflow is
 - Tells the player they were spawned with Rpc [BEAR_LoadoutAction.c](https://github.com/democore/ReforgerLoadout/blob/ee109bff8924cf09a70a23f2cc86234ce47100e4/Scripts/Game/LoadoutManager/BEAR_LoadoutAction.c#L91)
 - The client then waits until the items are replicated [BEAR_LoadoutPlayerNetworkFixComponent.c](https://github.com/democore/ReforgerLoadout/blob/ee109bff8924cf09a70a23f2cc86234ce47100e4/Scripts/Game/LoadoutManager/BEAR_LoadoutPlayerNetworkFixComponent.c#L56)
 - Once the items are replicated, they are equip on client side [BEAR_LoadoutPlayerNetworkFixComponent.c](https://github.com/democore/ReforgerLoadout/blob/ee109bff8924cf09a70a23f2cc86234ce47100e4/Scripts/Game/LoadoutManager/BEAR_LoadoutPlayerNetworkFixComponent.c#L70)
+
+
+Note:
+As of right now, this addon uses 4 dependencies from the workshop. I'll remove them when I have time. Until then, you can manually remove them by removing them from the addons settings and the resources from the [config file](https://github.com/democore/ReforgerLoadout/blob/master/Configs/Loadout_MTC.conf).
