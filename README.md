@@ -21,4 +21,4 @@ The current workflow is
 Note:
 As of right now, this addon uses 4 dependencies from the workshop. I'll remove them when I have time. Until then, you can manually remove them by removing them from the addons settings and the resources from the [config file](https://github.com/democore/ReforgerLoadout/blob/master/Configs/Loadout_MTC.conf).
 
-ᶘ ᵒᴥᵒᶅ
+🐻
